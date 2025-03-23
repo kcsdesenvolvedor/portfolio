@@ -16,5 +16,5 @@ Bem-vindo ao meu portfólio! 👋 Aqui você encontrará projetos que desenvolvi
 ## 📩 Contato  
 Se quiser bater um papo sobre tecnologia, trocar ideias ou até colaborar em algum projeto, sinta-se à vontade para entrar em contato!  
 
-📧 **E-mail:** [kcs.desenvolvedor@gmail.com](kcs.desenvolvedor@gmail.com) 
+📧 **E-mail:** [kcs.desenvolvedor@gmail.com](kcs.desenvolvedor@gmail.com)<br/>
 💼 **LinkedIn:** [kcs-desenvolvedor](https://www.linkedin.com/in/kcs-desenvolvedor/) 

@@ -13,11 +13,3 @@
     background: white;
     cursor: pointer;
   }
-
-  [data-i18n] {
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .changing-lang {
-    opacity: 0.5;
-  }

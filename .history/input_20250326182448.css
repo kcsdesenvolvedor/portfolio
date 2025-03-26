@@ -15,7 +15,7 @@
   }
 
   [data-i18n] {
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 1.9s ease;
   }
   
   .changing-lang {

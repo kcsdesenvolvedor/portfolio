@@ -50,7 +50,7 @@
 </head>
 <body class="bg-gray-100 font-sans">
     <header>
-        <nav class="fixed top-0 z-50 w-full px-4 py-4 flex justify-between items-center bg-stone-950">
+        <nav class="fixed top-0 z-50 w-full px-4 py-4 flex flex-row-reverse justify-between items-center bg-stone-950">
             <div class="lg:hidden">
                 <button class="navbar-burger flex items-center text-blue-600 p-3">
                     <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -59,15 +59,13 @@
                     </svg>
                 </button>
             </div>
-            <div>
-                <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-20">
-                    <li><a class="text-sm text-blue-600/80 dark:text-sky-400/80 hover:text-white" href="#home" data-i18n="home"></a></li>
-                    <li><a class="text-sm text-blue-600/80 dark:text-sky-400/80 hover:text-white" href="#about" data-i18n="about"></a></li>
-                    <li><a class="text-sm text-blue-600/80 dark:text-sky-400/80 hover:text-white" href="#skills" data-i18n="skills"></a></li>
-                    <li><a class="text-sm text-blue-600/80 dark:text-sky-400/80 hover:text-white" href="#projects" data-i18n="projects"></a></li>
-                    <li><a class="text-sm text-blue-600/80 dark:text-sky-400/80 hover:text-white" href="#contacts" data-i18n="contacts"></a></li>
-                </ul>
-            </div>
+            <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-20">
+                <li><a class="text-sm text-blue-600/80 dark:text-sky-400/80 hover:text-white" href="#home" data-i18n="home"></a></li>
+                <li><a class="text-sm text-blue-600/80 dark:text-sky-400/80 hover:text-white" href="#about" data-i18n="about"></a></li>
+                <li><a class="text-sm text-blue-600/80 dark:text-sky-400/80 hover:text-white" href="#achievements" data-i18n="skills"></a></li>
+                <li><a class="text-sm text-blue-600/80 dark:text-sky-400/80 hover:text-white" href="#achievements" data-i18n="projects"></a></li>
+            <li><a class="text-sm text-blue-600/80 dark:text-sky-400/80 hover:text-white" href="#contact" data-i18n="contacts"></a></li>
+            </ul>
             <div class="w-lg">
                 <select id="language-select" class="border-2 border-blue-600/80 dark:border-sky-400/80 text-blue-600/80 dark:text-sky-400/80 bg-transparent rounded-lg px-4 py-2">
                     <option value="en">English</option>
@@ -91,19 +89,21 @@
                 <div>
                     <ul>
                         <li class="mb-1">
-                            <a class="navbar-itemMenu block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#home" data-i18n="home"></a>
+                            <a class="navbar-itemMenu block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#home">Home</a>
                         </li>
                         <li class="mb-1">
-                            <a class="navbar-itemMenu block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#about" data-i18n="about"></a>
+                            <a class="navbar-itemMenu block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#about">About Me</a>
                         </li>
                         <li class="mb-1">
-                            <a class="navbar-itemMenu block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#skills" data-i18n="skills"></a>
+                            <a class="navbar-itemMenu block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#achievements">Achievements</a>
                         </li>
                         <li class="mb-1">
-                            <a class="navbar-itemMenu block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#projects" data-i18n="projects"></a>
+                            <a class="navbar-itemMenu block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#contact">My Contacts</a>
                         </li>
-                        <li class="mb-1">
-                            <a class="navbar-itemMenu block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#contact" data-i18n="contacts"></a>
+                        <li>
+                            <div class="border-t-2">
+                                <a class="navbar-itemMenu block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="https://kcode2025.github.io/sucess-history" target="_blank">Success Story</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -125,11 +125,21 @@
         <!-- Div do texto -->
         <div class="self-center w-full flex items-center justify-center">
             <div class="flex flex-col lg:w-2/4"> <!-- Ajuste essa div para ocupar 100% da largura -->
-                <p class="text-md text-left" data-i18n="hello"></p>
-                <p class="text-3xl text-blue-600/80 dark:text-sky-400/80 text-left font-semibold" data-i18n="apresentationMe"></p>
-                <p class="text-lg text-gray-400 text-left font-semibold mb-2" data-i18n="myProfission"></p>
-                <p class="text-xs text-gray-400 text-left font-semibold mb-8" data-i18n="welcomePortfolio"></p>
-                <a href="#contact" class="bg-blue-600/80 dark:bg-sky-400/80 text-white font-bold w-2/4 py-3 px-6 border-2 rounded-lg shadow-lg hover:bg-black hover:text-blue-600/80 hover:dark:text-sky-400/80 hover:border-blue-600/80 hover:dark:border-sky-400/80 hover:border-2 transition delay-150 duration-300 ease-in-out" data-i18n="contacts"></a>
+                <p class="text-md text-left">
+                    Hello!
+                </p>
+                <p class="text-3xl text-blue-600/80 dark:text-sky-400/80 text-left font-semibold">
+                    I´m Kellton Castro
+                </p>
+                <p class="text-lg text-gray-400 text-left font-semibold mb-2">
+                    Freelance developer & Web Designer
+                </p>
+                <p class="text-xs text-gray-400 text-left font-semibold mb-8">
+                    Welcome to my portfolio! Here you will find some of the projects I have developed throughout my journey as a developer and freelancer.
+                </p>
+                <a href="#contact" class="bg-blue-600/80 dark:bg-sky-400/80 text-white font-bold w-2/4 py-3 px-6 border-2 rounded-lg shadow-lg hover:bg-black hover:text-blue-600/80 hover:dark:text-sky-400/80 hover:border-blue-600/80 hover:dark:border-sky-400/80 hover:border-2 transition delay-150 duration-300 ease-in-out">
+                    My Contacts
+                </a>
             </div>
         </div>
     
@@ -149,11 +159,15 @@
             <img src="./img/perfil-portfolio1.png" class="w-3xs h-3xs relative z-10" alt="meu perfil">
         </div>
         <div class="px-5 w-full lg:w-3xl text-center lg:text-left">
-            <h3 class="text-3xl text-white font-bold mb-2" data-i18n="about"></h3>
+            <h3 class="text-3xl text-white font-bold mb-2">About me</h3>
             <div class="w-20 h-0.5 bg-blue-600/80 dark:bg-sky-400/80 mb-3 mx-auto lg:mx-0"></div>
-            <p class="text-gray-400 text-left w-full mb-8" data-i18n="aboutMeInfo"></p>
+            <p class="text-gray-400 text-left w-full mb-8">
+                I am a developer with 4 years of experience, working both in the corporate market and as a freelancer. Graduated in Systems Analysis and Development, I have experience in back-end and front-end development, contributing to the creation of efficient and scalable solutions. My approach involves continuous learning, always striving to keep up with new technologies and industry trends. I have a strong commitment to code quality, usability, and performance, ensuring that each delivered project adds value and innovation.
+            </p>
             <div class="flex flex-col lg:flex-row w-full lg:w-2/4 gap-4">
-                <a href="#contact" class="bg-blue-600/80 dark:bg-sky-400/80 text-center text-white font-bold w-full lg:w-2/4 py-3 px-6 border-2 rounded-lg shadow-lg hover:bg-black hover:text-blue-600/80 hover:dark:text-sky-400/80 hover:border-blue-600/80 hover:dark:border-sky-400/80 hover:border-2 transition delay-150 duration-300 ease-in-out" data-i18n="contacts"></a>
+                <a href="#contact" class="bg-blue-600/80 dark:bg-sky-400/80 text-center text-white font-bold w-full lg:w-2/4 py-3 px-6 border-2 rounded-lg shadow-lg hover:bg-black hover:text-blue-600/80 hover:dark:text-sky-400/80 hover:border-blue-600/80 hover:dark:border-sky-400/80 hover:border-2 transition delay-150 duration-300 ease-in-out">
+                    My Contacts
+                </a>
                 <a href="cv/Kellton.pdf" download="Kellton.pdf" class="bg-black text-center border-blue-600/80 dark:border-sky-400/80 text-blue-600/80 dark:text-sky-400/80 font-bold w-full lg:w-2/4 py-3 px-6 border-2 rounded-lg shadow-lg hover:text-white hover:border-white hover:border-2 transition delay-150 duration-300 ease-in-out">
                     Download CV
                 </a>
@@ -164,33 +178,33 @@
     
 
     <!-- Skills -->
-    <section id="skills" class="py-16 bg-stone-950 fade-in">
+    <section id="achievements" class="py-16 bg-stone-950 fade-in">
         <div class="container mx-auto text-center">
-            <h3 class="text-3xl text-white font-bold mb-6" data-i18n="skills"></h3>
+            <h3 class="text-3xl text-white font-bold mb-6">Skills</h3>
             <div class="px-5 grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="flex flex-col items-center bg-stone-700 p-6 rounded-lg shadow-lg transition delay-150 duration-300 transform hover:scale-105 hover:shadow-xl">
                     <img src="./img/hard-skills.png" alt="image hard skills">
-                    <h4 class="text-xl text-white font-bold mb-4" data-i18n="technicalSkills"></h4>
-                    <p class="text-gray-400 text-justify" data-i18n="technicalSkillsInfo"></p>
+                    <h4 class="text-xl text-white font-bold mb-4">Technical Skills</h4>
+                    <p class="text-gray-400 text-justify">I have experience in back-end and front-end development, working with .NET, REST APIs, and messaging systems. I also have solid knowledge of relational databases (SQL Server, PostgreSQL) and non-relational databases (MongoDB). On the front-end, I use React.js, Next.js, TypeScript, and Tailwind CSS, ensuring modern and responsive interfaces. Additionally, I am proficient with tools like Docker, Git, and CI/CD, applying best practices to create scalable and efficient solutions.</p>
                 </div>
                 <div class="flex flex-col items-center bg-stone-700 p-6 rounded-lg shadow-lg transition delay-150 duration-300 transform hover:scale-105 hover:shadow-xl">
                     <img src="./img/soft-skills.png" class="h-14" alt="image soft skills">
-                    <h4 class="text-xl text-white font-bold mb-4" data-i18n="softSkills"></h4>
-                    <p class="text-gray-400 text-justify" data-i18n="softSkillsInfo"></p>
+                    <h4 class="text-xl text-white font-bold mb-4">Soft Skills</h4>
+                    <p class="text-gray-400 text-justify">I am a communicative professional, with the ability to work well in teams and collaborate across different areas. I have strong analytical thinking, which allows me to solve problems strategically. Additionally, I am always seeking continuous learning to stay updated with new technologies. My organization and time management skills ensure efficient and high-quality deliveries, always focusing on best practices and innovation.</p>
                 </div>
                 <div class="flex flex-col items-center bg-stone-700 p-6 rounded-lg shadow-lg transition delay-150 duration-300 transform hover:scale-105 hover:shadow-xl">
                     <img src="./img/beyond-code.png" alt="imagem de beyond code">
-                    <h4 class="text-xl text-white font-bold mb-4" data-i18n="beyondCode"></h4>
-                    <p class="text-gray-400 text-justify" data-i18n="beyondCodeInfo"></p>
+                    <h4 class="text-xl text-white font-bold mb-4">Beyond Code</h4>
+                    <p class="text-gray-400 text-justify">Beyond programming, music holds a special place in my life. I am a gospel musician and find in music a way to express my faith and connect with people. I am also a cyclist, enjoying challenges and the freedom that riding brings. Above all, I am a father of two children, which motivates me daily to grow and evolve, both professionally and personally.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projetos -->
-    <section id="projects" class="py-16 bg-black fade-in">
+    <section id="achievements" class="py-16 bg-black fade-in">
         <div class="container mx-auto text-center">
-            <h3 class="text-3xl text-white font-bold mb-6" data-i18n="projects"></h3>
+            <h3 class="text-3xl text-white font-bold mb-6">Projects</h3>
             <div class="px-5 grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="relative bg-stone-700 p-6 rounded-lg shadow-lg
                 bg-[url('./img/homeoffice.jpg')] bg-cover bg-center bg-opacity-20">
@@ -198,9 +212,11 @@
                     <div class="relative z-10 flex flex-col items-center">
                         <img src="./img/api.png" alt="image api">
                         <h4 class="text-xl text-white font-bold mb-4">API .Net 8.0</h4>
-                        <p class="text-gray-100 text-justify" data-i18n="apiProjectInfo"></p>
+                        <p class="text-gray-100 text-justify">ParkingLotAPI is a RESTful API developed in .NET 8.0 to manage vehicle parking lots. The system allows for the registration and control of cars, parking spots, tickets, and parking lots, offering functionalities such as vehicle entry and exit registration, fee calculation, and management of available parking spots.</p>
                         <div class="flex justify-center mt-8 w-full">
-                            <a href="https://github.com/kcsdesenvolvedor/ParkingLotAPI" class="text-white font-semibold w-full lg:w-2/4 px-6 hover:text-blue-600/80 hover:dark:text-sky-400/80 transition delay-150 duration-300 ease-in-out" target="_blank" data-i18n="viewCode"></a>
+                            <a href="https://github.com/kcsdesenvolvedor/ParkingLotAPI" class="text-white font-semibold w-full lg:w-2/4 px-6 hover:text-blue-600/80 hover:dark:text-sky-400/80 transition delay-150 duration-300 ease-in-out" target="_blank">
+                                View code
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -209,11 +225,15 @@
                     <div class="absolute inset-0 bg-yellow-400/80 rounded-lg"></div>
                     <div class="relative z-10 flex flex-col items-center">
                         <img src="./img/next-project.png" alt="image nextjs project">
-                        <h4 class="text-xl text-white font-bold mb-4" data-i18n="nextjsProject"></h4>
-                        <p class="text-gray-100 text-justify" data-i18n="nextjsProjectInfo"></p>
+                        <h4 class="text-xl text-white font-bold mb-4">NextJs Project</h4>
+                        <p class="text-gray-100 text-justify">Movie Grid is a web system developed with trending front-end technologies such as Next.js, Tailwind CSS, TypeScript, among others. Its goal is to explore and discover popular movies and their detailed information. The project consumes The Movie Database (TMDB) API to display a list of movies in a responsive grid layout, featuring search and detailed movie view functionalities.</p>
                         <div class="flex justify-between mt-8 w-full">
-                            <a href="https://github.com/kcsdesenvolvedor/Movie-Grid" class=" text-white font-semibold w-full lg:w-2/4 px-6 hover:text-blue-600/80 hover:dark:text-sky-400/80 transition delay-150 duration-300 ease-in-out" target="_blank" data-i18n="viewCode"></a>
-                            <a href="https://movie-grid-blue.vercel.app/" class=" text-white font-semibold w-full lg:w-2/4 px-6 hover:text-blue-600/80 hover:dark:text-sky-400/80 transition delay-150 duration-300 ease-in-out" target="_blank" data-i18n="viewDesign"></a>
+                            <a href="https://github.com/kcsdesenvolvedor/Movie-Grid" class=" text-white font-semibold w-full lg:w-2/4 px-6 hover:text-blue-600/80 hover:dark:text-sky-400/80 transition delay-150 duration-300 ease-in-out" target="_blank">
+                                View code
+                            </a>
+                            <a href="https://movie-grid-blue.vercel.app/" class=" text-white font-semibold w-full lg:w-2/4 px-6 hover:text-blue-600/80 hover:dark:text-sky-400/80 transition delay-150 duration-300 ease-in-out" target="_blank">
+                                View design
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -222,10 +242,12 @@
                     <div class="absolute inset-0 bg-green-400/80 rounded-lg"></div>    
                     <div class="relative z-10 flex flex-col items-center">
                         <img src="./img/mensageria.png" alt="imagem de mensageria">
-                        <h4 class="text-xl text-white font-bold mb-4" data-i18n="messagingWithRabbitMQ"></h4>
-                        <p class="text-gray-100 text-justify" data-i18n="messagingWithRabbitMQInfo"></p>
+                        <h4 class="text-xl text-white font-bold mb-4">Messaging with RabbitMQ</h4>
+                        <p class="text-gray-100 text-justify">CompraCerta is an e-commerce system designed to manage order processing in an efficient and scalable way. The project consists of three main parts: a front-end developed with Next.js, a .NET API that manages requests and integrations, and a Consumer that processes purchases in the background using RabbitMQ.</p>
                         <div class="flex justify-center mt-8 w-full">
-                            <a href="https://github.com/kcsdesenvolvedor/compra-certa" class="text-white font-semibold w-full lg:w-2/4 px-6 hover:text-blue-600/80 hover:dark:text-sky-400/80 transition delay-150 duration-300 ease-in-out" target="_blank" data-i18n="viewCode"></a>
+                            <a href="https://github.com/kcsdesenvolvedor/compra-certa" class="text-white font-semibold w-full lg:w-2/4 px-6 hover:text-blue-600/80 hover:dark:text-sky-400/80 transition delay-150 duration-300 ease-in-out" target="_blank">
+                                View code
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -234,10 +256,10 @@
     </section>
     
     <!-- Contato -->
-    <section id="contacts" class="py-16 bg-stone-950 text-white text-center fade-in">
+    <section id="contact" class="py-16 bg-stone-950 text-white text-center fade-in">
         <div class="container mx-auto px-2">
-            <h3 class="text-3xl font-bold mb-6" data-i18n="contacts"></h3>
-            <p class="mb-8" data-i18n="mainSocialMediaInfo"></p>
+            <h3 class="text-3xl font-bold mb-6">Contacts</h3>
+            <p class="mb-8">Main social media platforms of one of the most inspiring and successful men in the world.</p>
             <form class="max-w-lg mx-auto">
                 <div class="flex flex-col justify-center lg:flex-row mb-4 gap-8">
                     <a href="https://www.cityfootballgroup.com/" target="_blank">
